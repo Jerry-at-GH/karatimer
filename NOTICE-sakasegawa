@@ -1,0 +1,12 @@
+sakasegawa pronunciation code
+Copyright 2026 Sakasegawa
+https://github.com/nyosegawa/hiragana-asr
+
+kana/phoneme vocabulary and conversion adapted and simplified for karatimer.
+
+Reazon encoder configuration
+https://huggingface.co/reazon-research/japanese-wav2vec2-large
+
+encoder configuration copied without modification.
+
+these upstream materials are licensed under Apache-2.0; see LICENSE.

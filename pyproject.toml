@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "karatimer"
+version = "0.2.0"
+description = "Japanese karaoke unit timing from media and TSV lyrics"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE-sakasegawa"]
+requires-python = ">=3.12"
+dependencies = [
+  "numpy>=2", "torch>=2.8", "torchaudio>=2.8", "av>=18.1,<19",
+  "transformers==4.57.6", "huggingface-hub>=0.34,<1",
+  "jaconv==0.5.0", "pyopenjtalk==0.4.1", "numba>=0.61",
+]
+
+[project.scripts]
+karatimer = "karatimer.__main__:main"
